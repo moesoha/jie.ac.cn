@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>中国杰学院</title>
+		<link rel="stylesheet" href="/pure-min.css">
+		<link rel="stylesheet" href="/grids-responsive-min.css">
+		<style>
+			/* most of them are from purecss.io */
+			* {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			a {
+				color: #3b8bba; /* block-background-text-normal */
+				text-decoration: none;
+			}
+
+			body {
+				line-height: 1.7em;
+				color: #7f8c8d;
+				font-size: 13px;
+			}
+
+			h1,h2,h3,h4,h5,h6,label {
+				color: #34495e;
+			}
+
+			.pure-img-responsive {
+				max-width: 100%;
+				height: auto;
+			}
+
+			.splash-container {
+				z-index: 1;
+				overflow: hidden;
+				background-image: url(/img/a.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+				z-index: 1;
+				background-attachment: fixed;
+				background-position: center;
+				width: 100%;
+				height: 88%;
+				top: 0;
+				left: 0;
+				position: fixed !important;
+			}
+
+			.splash {
+				/* absolute center .splash within .splash-container */
+				width: 80%;
+				height: 50%;
+				margin: auto;
+				position: absolute;
+				top: 100px; left: 0; bottom: 0; right: 0;
+				text-align: center;
+				text-transform: uppercase;
+			}
+
+			.splash-head {
+				font-size: 20px;
+				font-weight: bold;
+				color: white;
+				border: 3px solid white;
+				padding: 1em 1.6em;
+				font-weight: 100;
+				border-radius: 5px;
+				line-height: 1em;
+			}
+
+			.splash-subhead {
+				color: white;
+				letter-spacing: 0.05em;
+				opacity: 0.8;
+			}
+
+			.l-box {
+				padding: 1em;
+			}
+
+			.l-box-lrg {
+				padding: 2em;
+				border-bottom: 1px solid rgba(0,0,0,0.1);
+			}
+
+			.is-center {
+				text-align: center;
+			}
+
+			.home-menu {
+				padding: 0.5em;
+				text-align: center;
+				box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+			}
+			.home-menu {
+				background: #2d3e50;
+			}
+			.pure-menu.pure-menu-fixed {
+				/* Fixed menus normally have a border at the bottom. */
+				border-bottom: none;
+				/* I need a higher z-index here because of the scroll-over effect. */
+				z-index: 4;
+			}
+			.home-menu .pure-menu-heading {
+				color: white;
+				font-weight: 400;
+				font-size: 120%;
+			}
+			.home-menu .pure-menu-selected a {
+				color: white;
+			}
+			.home-menu a {
+				color: #6FBEF3;
+			}
+			.home-menu li a:hover,.home-menu li a:focus {
+				background: none;
+				border: none;
+				color: #AECFE5;
+			}
+
+			.content-wrapper {
+				/* These styles are required for the "scroll-over" effect */
+				position: absolute;
+				top: 87%;
+				width: 100%;
+				min-height: 12%;
+				z-index: 2;
+				background: white;
+			}
+
+			.content {
+				padding: 1em 1em 3em;
+			}
+
+			.content-head {
+				font-weight: 400;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				margin: 2em 0 1em;
+			}
+			.content-subhead {
+				color: #1f8dd6;
+			}
+			.content-subhead i {
+				margin-right: 7px;
+			}
+
+			/* This is the class used for the footer */
+			.footer {
+				font-size: 87.5%;
+				border-top: 1px solid #eee;
+				margin-top: 3.4286em;
+				padding: 1.1429em;
+				background: rgb(250, 250, 250);
+			}
+
+			@media (min-width: 48em) {
+				body {
+					font-size: 16px;
+				}
+				.home-menu {
+					text-align: left;
+				}
+				.home-menu ul {
+					float: right;
+				}
+				.splash {
+					width: 50%;
+					height: 50%;
+				}
+
+				.splash-head {
+					font-size: 250%;
+				}
+
+				.l-box-lrg {
+					border: none;
+				}
+
+			}
+
+			@media (min-width: 78em) {
+				.splash-head {
+					font-size: 300%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+				<a class="pure-menu-heading">中国杰学院</a>
+
+				<ul class="pure-menu-list">
+					<li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">首页</a></li>
+					<li class="pure-menu-item"><a href="https://github.com/moesoha/jie.ac.cn" class="pure-menu-link">GitHub</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="splash-container">
+			<div class="splash">
+				<h1 class="splash-head">中国杰学院</h1>
+				<p class="splash-subhead">
+					你看这个彬彬，才喝几罐，就醉了。
+				</p>
+			</div>
+		</div>
+
+		<div class="content-wrapper">
+			<div class="content">
+				<div class="l-box-lrg">
+					<div class="is-center">
+						<h2 class="content-head">“杰哥不要啊！”</h2>
+					</div>
+				</div>
+
+				<div class="pure-g">
+					<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4" style="padding: 0 2em;">
+						<h3 class="is-center content-subhead">“我这里刚好有个面包”</h3>
+						<img class="pure-img-responsive" src="/img/bread.png">
+					</div>
+					<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4" style="padding: 0 2em;">
+						<h3 class="is-center content-subhead">推销台湾啤酒</h3>
+						<img class="pure-img-responsive" src="/img/beer.png">
+					</div>
+					<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4" style="padding: 0 2em;">
+						<h3 class="is-center content-subhead">“我看你完全是不懂喔”</h3>
+						<img class="pure-img-responsive" src="/img/unknow.png">
+					</div>
+					<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4" style="padding: 0 2em;">
+						<h3 class="is-center content-subhead">“让我看看！”</h3>
+						<img class="pure-img-responsive" src="/img/let-me-see-see.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="ribbon l-box-lrg pure-g">
+				<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+					<h2 class="content-head content-head-ribbon">《如果早知道男生也会被性侵》</h2>
+					<p>
+						《如果早知道男生也会被性侵》是台湾国家教育研究院制作的一部性别平等教育宣传影片，由陈北川导演，传爱编剧小组编剧，在基隆市拍摄。剧情讲述了一名男学生阿玮被男子杰哥性侵犯的故事，在网络上引起巨大反响。
+					</p>
+					<p>
+						<a class="pure-button" href="https://youtu.be/COZIk_dhSK4">YouTube</a>
+						<a class="pure-button" href="https://www.bilibili.com/video/av7884321/">Bilibili</a>
+					</p>
+				</div>
+				<div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+					<img class="pure-img-responsive" src="/img/no-jie.png">
+				</div>
+			</div>
+
+			<div class="ribbon l-box-lrg pure-g">
+				<div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+					<img class="pure-img-responsive" src="/img/die-lela.png">
+				</div>
+				<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+					<h2 class="content-head content-head-ribbon">剧情梗概</h2>
+					<p>
+						阿玮与阿嬷吵架后，翘家和朋友彬彬去网吧玩。两人在网吧被杰哥盯上，在出网吧后被杰哥搭讪。杰哥以“家中有很多吃的”、“帮助过很多逃家少年”等理由，诱使他们去自己家里玩。杰哥带两人去超商买东西，并趁机带了几罐啤酒回家。在家中，杰哥将两人灌醉后企图对阿玮性侵犯，虽然阿玮大喊“杰哥不要！”，但杰哥斥喝“听话，让我看看！”后性侵阿玮得逞，并威胁其不准将这件事说出去。事后，阿玮的身心受到创伤，他在公园遇见志工妈妈淑惠时，听见她提及性侵犯相关词汇而大叫，因而被淑惠注意，在她的帮助下，阿玮吐露出了自己的遭遇，并接受淑惠的建议，准备报警、验伤、通报学校，让全案进入司法程序。影片最后由旁白说明性侵害的定义。
+					</p>
+					<p>
+						<a class="pure-button" href="https://zh.wikipedia.org/zh-cn/%E5%A6%82%E6%9E%9C%E6%97%A9%E7%9F%A5%E9%81%93%E7%94%B7%E7%94%9F%E4%B9%9F%E6%9C%83%E8%A2%AB%E6%80%A7%E4%BE%B5">Wikipedia</a>
+						<a class="pure-button" href="https://zh.moegirl.org/zh-hans/%E6%9D%B0%E5%A7%90">萌娘百科 (杰姐)</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="footer">
+				<div class="legal pure-g">
+					<div class="pure-u-1 u-sm-1-2">
+						<p>
+							科研同盟机构：
+							<a href="https://www.chtholly.ac.cn/">中国珂学院</a>, &nbsp;&nbsp;
+							<a href="https://www.white.ac.cn/">中国白学院</a>, &nbsp;&nbsp;
+							<a href="https://aim.ac.cn/">中国魔学院 AIM 扩散力场研究院</a>, &nbsp;&nbsp;
+							<a href="https://www.island.ac.cn/">中国島学院</a>, &nbsp;&nbsp;
+						</p>
+						<p>“其实‘男性被性侵’是一个非常严肃的话题，希望大家不要娱乐至上、消解此防范性罪行宣传片的原本目的。”</p>
+					</div>
+					<div class="pure-u-1 u-sm-1-2">
+						<p>Hosted by GitHub Pages, and here is the <a href="https://github.com/moesoha/jie.ac.cn">repository</a>. Some contents from Wikipedia.<br />Written by <a href="https://sohaj.in">Soha Jin</a>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
